@@ -35,6 +35,7 @@ body .header .nav-bar_logo {
 body .header .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding: 1.4rem;
 }
 body .header .image_full_screen_header {
   background-image: url("../img/la-chouette-agence-banniere.jpg");
@@ -52,10 +53,27 @@ body .image_full_screen_header_contact {
   background-image: url("../img/texture-paper.png");
   height: 20rem;
 }
+body .logo {
+  width: 6rem;
+  margin: auto;
+}
+body .section02_title {
+  text-align: center;
+}
+body .button {
+  display: block;
+  margin: auto;
+}
 body .container {
   width: 80%;
-  background-color: orange;
+  background-color: green;
   margin: auto;
+}
+body .section02 {
+  height: 19rem;
+}
+body .section03_title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
