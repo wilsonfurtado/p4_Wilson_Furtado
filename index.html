@@ -2,9 +2,14 @@
 <html>
 <head>
 	<meta name="description" content="Agence de webdesign à Lyon" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>La chouette agence</title>
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all"> -->
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header class="header">	
@@ -12,14 +17,16 @@
 			<div class="container">
 				<nav class="nav-bar">
 					<div class="nav-bar_logo">
-						<img src="img/la-chouette-agence.png">
+						<a href="index.html">
+							<img src="img/la-chouette-agence.png">
+						</a>
 					</div>
 
 					<div class="nav-bar_links">
 						<a href="#">Accueil</a>
 						<a href="#service">Service</a>
 						<a href="#portfolio">Portfolio</a>
-						<a href="#contact">Contact</a>
+						<a href="contact.html">Contact</a>
 					</div>
 				</nav>
 				<!-- 	navbar -->	
@@ -29,6 +36,9 @@
 	</header>
 	<!-- header -->
 	<main class="main">
+		<a class="btn-scroll showScrollTop" id="scrollToTop" onclick="scrollToTarget('1')" href="">
+			<span class="fa fa-chevron-up"></span>
+		</a>
 		<section class="section02">
 			<div class="container">
 				<div class="logo">
@@ -50,19 +60,21 @@
 				</h2>
 				<div class="section03_cards">
 					<article class="section03_card01">
-						<h3>WEB DESIGN</h3>
+						<i class="fa fa-edge" aria-hidden="true"></i>
+
+						<h3 class="section03Title">WEB DESIGN</h3>
 						<p class="card-text">
 							Que vous ayez un site web qui a besoin d’un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 						</p>
 					</article>
 					<article class="section03_card02">
-						<h3>STRATÉGIE</h3>
+						<h3 class="section03Title">STRATÉGIE</h3>
 						<p class="card-text">
 							Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.
 						</p>
 					</article> 
 					<article class="section03_card03">
-						<h3>ILLUSTRATIONS</h3>
+						<h3 class="section03Title">ILLUSTRATIONS</h3>
 						<p class="card-text">
 							Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 						</p>
@@ -70,8 +82,8 @@
 				</div>
 
 				<h4 class="section03_subtitle">
-						<i>"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous aide à doubler nos ventes en ligne à Lyon."</i>
-					</h4>
+					<i>"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous aide à doubler nos ventes en ligne à Lyon."</i>
+				</h4>
 					
 					<p class="section03_text">Maxime Guilbard, PDG de A vos fourchettes</p>
 			</div>
@@ -80,13 +92,15 @@
 		<section class="section04">
 			<div class="image_full_screen_main01">
 				<div class="container section04_bg">
-
+					
 					<h2 class="section04_title">Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .</h2>
 
 					<p class="section04_text">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</p>
+
 					<div class="section04_link">
 						<a href="">Contactez notre équipe</a>
 					</div>
+					
 				</div>
 			</div>
 		</section>
@@ -99,22 +113,22 @@
 				<div class="section06_cards">
 					<article class="section06_card">
 						<img src="img/1.jpg">
-						<h3 class="section06_title">REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</h3>
+						<h3 class="section06_subtitle">REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</h3>
 						<p class="section06_text">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
 					</article>
 					<article class="section06_card">
 						<img src="img/2.jpg">
-						<h3 class="section06_title">CRÉATION D'UN SITE WEB POUR PHOTOGRAPHES</h3>
+						<h3 class="section06_subtitle">CRÉATION D'UN SITE WEB POUR PHOTOGRAPHES</h3>
 						<p class="section06_text">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
 					</article>
 					<article class="section06_card">
 						<img src="img/3.jpg">
-						<h3 class="section06_title">CRÉATION D'UN SITE INTERNET POUR UN VOYAGEUR</h3>
+						<h3 class="section06_subtitle">CRÉATION D'UN SITE INTERNET POUR UN VOYAGEUR</h3>
 						<p class="section06_text">Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
 					</article>
 					<article class="section06_card">
 						<img src="img/4.jpg">
-						<h3 class="section06_title">CONCEPTION D'UN SITE POUR UNE AGENCE DE MARIAGE</h3>
+						<h3 class="section06_subtitle">CONCEPTION D'UN SITE POUR UNE AGENCE DE MARIAGE</h3>
 						<p class="section06_text">Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
 					</article>
 				</div>
@@ -125,10 +139,7 @@
 			<div class="image_full_screen_main02">
 				<div class="container">
 					<h2 class="section07_title">Prêt pour redonner vie à votre projet ? <br> Contactez notre équipe !</h2>
-
-					<button class="button styled" type="button">
-					    Contact
-					</button>
+					<a class="btn-orange" href="contact.html">Contact</a>
 				</div>
 			</div>
 		</section>	
@@ -180,6 +191,11 @@
 			</div>
 		</section>
 	</footer>
-
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script> -->
+	<!-- <script src="./js/blocs.js" defer></script> -->
+	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
+	<script src="./js/gmaps.js" defer></script>
 </body>
 </html>

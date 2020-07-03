@@ -2,33 +2,44 @@
 <html>
 <head>
 	<meta name="description" content="Agence de webdesign à Lyon" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Contact - La chouette agence</title>
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all">
 </head>
 <body>
 
-	<header class="header">	
-		<section>
+	<header class="header headerContact">	
+		<section class="section01Contact">
 			<div class="container">
 				<nav class="nav-bar">
 					<div class="nav-bar_logo">
-						<img src="img/la-chouette-agence.png">
+						<a href="index.html">
+							<img src="img/la-chouette-agence.png">
+						</a>
 					</div>
 
 					<div class="nav-bar_links">
 						<a href="index.html">Accueil</a>
-						<a href="contact.html">Contact</a>
+						<a href="#service">Service</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#contact">Contact</a>
 					</div>
 				</nav>
 				<!-- 	navbar -->	
 			</div>
-			<div class="image_full_screen_header_contact"></div>
+			<div class="image_full_screen_header_contact">
+				<h2>Parlons web design !</h2>
+				<p>Nous sommes ravis que vous souhaitiez collaborer avec notre agence.</p>
+				<p>Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+			</div>
 		</section>
 	</header>
 	<!-- header -->
 
-	<main class="main">
+	<main class="mainContact">
 		<div class="container">
 			<form action="/action_page.php">
 			  <label for="fname">Nom</label><br>
@@ -42,18 +53,71 @@
 			  <label for="lname">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label><br>
 			  <textarea name="message" rows="10" cols="30"></textarea><br><br>
 
-			  <input type="submit" value="Submit">
+			  <input type="submit" value="Envoyer">
 			</form>
+			<div class="localisation">
+				<address>
+				  <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>
+				  <a href="tel:+13115552368">(311) 555-2368</a>
+				  <p>2 place Sathonay 69001 Lyon</p> 
+			      <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+				</address>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.082950655578!2d4.827978615746732!3d45.76952782103856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1591164002458!5m2!1sfr!2sfr"
+	                    width="600"
+	                    height="450"
+	                    aria-hidden="false"
+	                    tabindex="0">
 
-			<address>
-			  <a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>
-			  <a href="tel:+13115552368">(311) 555-2368</a>
-			</address> 
+	            </iframe> 
+            </div>
 		</div>	
 	</main>
 	<footer class="footer">
-		
+		<section class="section08">
+			<div class="container">
+				<h3 class="section08_title">LA CHOUETTE AGENCE - AGENCE WEB BASÉE À LYON</h3>
+				<div class="section08_blocks">
+					<aside class="block01">
+						<h4>Partenaires</h4>
+						<ul>
+							<li><a href="#">voiture.com</a></li>
+							<li><a href="#">pizza.com</a></li>
+							<li><a href="#">matoiture.com</a></li>
+							<li><a href="#">immobilierseo.com</a></li>
+						</ul>
+					</aside>
+					<aside class="block02">
+						<h4>Annuaires liste 1</h4>
+						<ul>
+							<li><a href="#">annuaireagence.com</a></li>
+							<li><a href="#">annuaireseo.com</a></li>
+							<li><a href="#">annuairemarketing.com</a></li>
+							<li><a href="#">123seo.com</a></li>
+							<li><a href="#">123site.com</a></li>
+							<li><a href="#">annuairewordpress.com</a></li>
+							<li><a href="#">listeagence.com</a></li>
+							<li><a href="#">meilleuresagencesparis.com</a></li>
+							<li><a href="#">listeseo.com</a></li>
+						</ul>
+					</aside>
+					<aside class="block03">
+						<h4>Annuaires liste 2</h4>
+						<ul>
+							<li><a href="#">betterseo.com</a></li>
+							<li><a href="#">ameliorerseo.com</a></li>
+							<li><a href="#">seojuicelien.com</a></li>
+							<li><a href="#">meilleursliens.com</a></li>
+							<li><a href="#">liensagogo.com</a></li>
+							<li><a href="#">backlink.com</a></li>
+							<li><a href="#">linkjuiceannuaire.com</a></li>
+							<li><a href="#">remontersurgoogle.com</a></li>
+							<li><a href="#">vraiseofiable.com</a></li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</section>
 	</footer>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js" defer></script>
 </body>
 </html>
