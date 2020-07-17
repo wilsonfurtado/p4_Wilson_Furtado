@@ -6,6 +6,68 @@ $color-text-footer : #691F1F;
 body {
   background-color: #FFF;
 
+  /*font-family: et-line;*/
+
+  @font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  }
+
+
+  @font-face{
+    font-family:et-line;
+    src:url(fonts/et-line.eot);
+    src:url(fonts/et-line.eot?#iefix) format("embedded-opentype"),
+        url(fonts/et-line.woff) format("woff"),
+        url(fonts/et-line.ttf) format("truetype"),
+        url(fonts/et-line.svg#et-line) format("svg");
+        font-weight:400;font-style:normal
+  }
+
+  
+
+  .et-icon- {
+    font-family: et-line;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 60px;
+    color: #364577;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.et-icon-browser::before {
+    content: "\e00c";
+}
+
+.et-icon-presentation::before {
+    content: "\e00e";
+}
+
+.et-icon-edit::before {
+    content: "\e01c";
+}
+
+/*  .myClass:before {
+      font-family: FontAwesome;
+      content: "\f024";
+  }
+*/
 	img {
 		max-width: 100%;
     width: 100%;
@@ -53,6 +115,13 @@ body {
     display: block;
     width: 5rem;
     margin:0 auto;
+    transition: all 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #c27956;
+    color: #fff;
+    text-decoration: none;
 }
 
   .btn-scroll {
@@ -63,7 +132,7 @@ body {
     height: 40px;
     z-index: 20;
     cursor: pointer;
-    opacity: 0;
+    /*opacity: 0;*/
     border-radius: 4px;
     background: rgba(0,0,0,0.3);
     display: flex;
@@ -75,6 +144,20 @@ body {
     font-weight: 400;
     transition: all .3s;
     z-index: 1000;
+  }
+
+
+  .mr-sm-5 {
+    margin-right: 2rem;
+  }
+
+  .fa-2x {
+    font-size: 2em;
+    color: #691F1F;
+  }
+
+  .footer .fa:hover {
+    color: #CCCCCC;
   }
 
   .styled {
@@ -93,6 +176,11 @@ body {
           color: #fff;
           text-decoration: none;
         
+    }
+
+    .section08_reseaux {
+      display: flex;
+      justify-content: center;
     }
 
     .mainContact {
@@ -246,7 +334,7 @@ body {
     .section04_title {
       padding: 3rem;
       color: #FFF; 
-      text-shadow: 0 1px 0 #F3976C;
+      /*text-shadow: 0 1px 0 #F3976C;*/
       font-size: 1.2rem;
       font-weight: 500;
       text-align: center;
@@ -260,7 +348,7 @@ body {
       padding-right: 2rem;
       padding-left: 2rem;
       text-align: center;
-      text-shadow: 0 1px 0 #fff;
+      /*text-shadow: 0 1px 0 #fff;*/
       z-index: 10;
       color: #fff !important;
     }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+	<meta charset="utf-8"/>
 	<meta name="description" content="Agence de webdesign à Lyon" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -10,15 +11,17 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="all"> -->
 
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
 </head>
 <body>
 	<header class="header">	
-		<section class="section01">
+		<div class="section01">
 			<div class="container">
 				<nav class="nav-bar">
 					<div class="nav-bar_logo">
-						<a href="index.html">
-							<img src="img/la-chouette-agence.png">
+						<a href="index.html" title="logo">
+							<img src="img/la-chouette-agence.png" alt="logo">
 						</a>
 					</div>
 
@@ -32,24 +35,22 @@
 				<!-- 	navbar -->	
 			</div>
 			<div class="image_full_screen_header"></div>
-		</section>
+		</div>
 	</header>
 	<!-- header -->
 	<main class="main">
-		<a class="btn-scroll showScrollTop" id="scrollToTop" onclick="scrollToTarget('1')" href="">
+		<a class="btn-scroll showScrollTop" id="scrollToTop" onclick="scrollToTarget('1')" href="#" title="chevron up">
 			<span class="fa fa-chevron-up"></span>
 		</a>
 		<section class="section02">
 			<div class="container">
 				<div class="logo">
-					<img src="img/logo.png">
+					<img src="img/logo.png" alt="logo">
 				</div>
 
 				<h2 class="section02_title">La chouette agence.</h2>
 
-				<button class="button styled" type="button">
-				    Add to favorites
-				</button>
+				<a class="btn-orange" href="contact.html">Contact</a>
 			</div>
 		</section>
 
@@ -60,7 +61,9 @@
 				</h2>
 				<div class="section03_cards">
 					<article class="section03_card01">
-						<i class="fa fa-edge" aria-hidden="true"></i>
+						<div>
+		                    <span class="et-icon- et-icon-browser"></span>
+		                </div>
 
 						<h3 class="section03Title">WEB DESIGN</h3>
 						<p class="card-text">
@@ -68,12 +71,18 @@
 						</p>
 					</article>
 					<article class="section03_card02">
+						<div>
+		                    <span class="et-icon- et-icon-presentation"></span>
+		                </div>
 						<h3 class="section03Title">STRATÉGIE</h3>
 						<p class="card-text">
 							Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.
 						</p>
 					</article> 
 					<article class="section03_card03">
+						<div>
+		                    <span class="et-icon- et-icon-edit"></span>
+		                </div>
 						<h3 class="section03Title">ILLUSTRATIONS</h3>
 						<p class="card-text">
 							Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
@@ -82,7 +91,7 @@
 				</div>
 
 				<h4 class="section03_subtitle">
-					<i>"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous aide à doubler nos ventes en ligne à Lyon."</i>
+					<strong>"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous aide à doubler nos ventes en ligne à Lyon."</strong>
 				</h4>
 					
 					<p class="section03_text">Maxime Guilbard, PDG de A vos fourchettes</p>
@@ -112,22 +121,22 @@
 				<h2 class="section06_title">Nous travaillons avec beaucoup de clients , voici nos réalisations</h2>
 				<div class="section06_cards">
 					<article class="section06_card">
-						<img src="img/1.jpg">
+						<img src="img/1.jpg" alt="Livres ouverts empilés">
 						<h3 class="section06_subtitle">REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</h3>
 						<p class="section06_text">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
 					</article>
 					<article class="section06_card">
-						<img src="img/2.jpg">
+						<img src="img/2.jpg" alt="Personne qui prend une photo">
 						<h3 class="section06_subtitle">CRÉATION D'UN SITE WEB POUR PHOTOGRAPHES</h3>
 						<p class="section06_text">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
 					</article>
 					<article class="section06_card">
-						<img src="img/3.jpg">
+						<img src="img/3.jpg" alt="materiel video">
 						<h3 class="section06_subtitle">CRÉATION D'UN SITE INTERNET POUR UN VOYAGEUR</h3>
 						<p class="section06_text">Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
 					</article>
 					<article class="section06_card">
-						<img src="img/4.jpg">
+						<img src="img/4.jpg" alt="Groupe-personnes-qui-travaillent">
 						<h3 class="section06_subtitle">CONCEPTION D'UN SITE POUR UNE AGENCE DE MARIAGE</h3>
 						<p class="section06_text">Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
 					</article>
@@ -149,6 +158,28 @@
 		<section class="section08">
 			<div class="container">
 				<h3 class="section08_title">LA CHOUETTE AGENCE - AGENCE WEB BASÉE À LYON</h3>
+				<div class="section08_reseaux">
+		            <aside class="mr-sm-5">
+		                <a href="./index.html" title="icon twitter">
+		                    <span class="fa fa-twitter fa-2x" role="link"></span>
+		                </a>
+		            </aside>
+		            <aside class="mr-sm-5">
+		                <a href="./index.html" title="icon facebook">
+		                    <span class="fa fa-facebook fa-2x" role="link"></span>
+		                </a>
+		            </aside>
+		            <aside class="mr-sm-5">
+		                <a href="./index.html" title="icon dribbble">
+		                    <span class="fa fa-dribbble fa-2x" role="link"></span>
+		                </a>
+		            </aside>
+		            <aside>
+		                <a href="./index.html" title="icon instagram">
+		                    <span class="fa fa-instagram fa-2x" role="link"></span>
+		                </a>
+		            </aside>
+		        </div>
 				<div class="section08_blocks">
 					<aside class="block01">
 						<h4>Partenaires</h4>
